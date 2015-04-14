@@ -1,0 +1,21 @@
+<?php
+
+// Paths
+define ('URL', '');
+define ('ROOT', dirname(__FILE__));
+define ('LIBS', 'libs/');
+define ('UTILS', 'utils/');
+define ('PROJECTNAME', '');
+
+// The sitewide hashkey, do not change this because it's used for passwords!
+define('HASH_GENERAL_KEY', '');
+
+// This is for database passwords
+define('HASH_PASSWORD_KEY', '');
+
+// Database
+define ('DB_TYPE', '');
+define ('DB_HOST', '');
+define ('DB_NAME', '');
+define ('DB_USER', '');
+define ('DB_PASS', '');

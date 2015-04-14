@@ -1,0 +1,383 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-attachment: fixed;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: #1f1f1f;
+    color: #000000;
+    font-size: 11px;
+    height: 100%;
+    margin: 0px;
+    min-width: 960px;
+}
+
+a{
+    color: #cc0920;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../assets/font/bebasneue-webfont.eot');
+    src: local('☺'), 
+        url('../assets/font/bebasneue-webfont.woff') format('woff'), 
+        url('../assets/font/bebasneue-webfont.ttf') format('truetype'), 
+        url('../assets/font/bebasneue-webfont.svg#webfontPxxwr5cF') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header, nav, section, article, aside, footer {
+    display:block;
+}
+
+#bLogo {
+    width: 145px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+    text-indent: 22px;
+}
+
+
+#bLogo img{
+    width: 120px;
+    height: 640px;
+}
+
+#cMainNav {
+    width: 221px;
+    min-height: 100%;
+    padding: 0;
+    margin: auto;
+    float: left;
+    overflow: hidden;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ED161616,endColorstr=#ED161616);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ED161616,endColorstr=#ED161616);
+    background-color: rgba(22,22,22,.93);
+}
+
+#cMainNav ul {
+    list-style: inside decimal-leading-zero;
+    padding: 24px 20px 30px 20px;
+    border-bottom: 3px solid #000;
+}
+
+#cMainNav ul li {
+    padding: 14px 0 0 0;
+    font-family: georgia, Arial;
+    font-size: 15px;
+    color: #CC0920;
+}
+
+#cMainNav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+#cMainNav ul li a:hover{
+    text-decoration: underline;
+}
+
+#cMainNav .eListFold > ul {
+    padding: 0 0 0 25px;
+    max-height: 0;
+    overflow: hidden;
+    border: none;
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+}
+
+#cMainNav .eListFold:hover > ul{
+    max-height: 400px;
+}
+
+#cMainNav .eListFold > ul > li {
+    padding: 14px 0 0 0;
+}
+
+#cMainNav ul li ul li {
+    padding: 7px 0 5px 0;
+    list-style: none;
+}
+
+#cMainNav ul li ul li a {
+    font: italic 13px Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+    text-decoration: none;
+    color: #bbb;
+}
+
+#cMainNav ul li ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#cMainNav h2{
+    padding: 24px 20px 10px;
+    color: #CC0920;
+    font: bolder 15px Arial;
+}
+
+#cMainNav p{
+    padding: 0 20px 24px;
+    color: #fff;
+    font: 11px/24px Arial;
+}
+
+#cSingleColumn {
+    float: left;
+}
+
+#bBreadCrumb ul{
+    margin-top: 25px;
+    padding: 9px 10px;
+    display: inline-block;
+    list-style: none;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,endColorstr=#19FFFFFF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,endColorstr=#19FFFFFF);
+    background-color:  rgba(255, 255, 255, .15);
+    font-family: Arial;
+    font-size: 10px;
+}
+
+#bBreadCrumb li{
+    display: inline;
+}
+
+#cSingleColumnArticles {
+    width: 540px;
+    min-height: 400px;
+    margin: 91px 0px 50px 30px;
+    padding: 0 0 40px;
+    border-top: 1px solid #fff;
+    overflow: hidden;
+    background-image: url("../assets/siteart/grad.png");
+    background-repeat: repeat-x;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E0FFFFFF,endColorstr=#E0FFFFFF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E0FFFFFF,endColorstr=#E0FFFFFF);
+    background-color: rgba(255, 255, 255, .87);
+    font-family: georgia;
+    font: italic;
+    font-size: 13px/24px;
+    -moz-box-shadow: 0px 0px 16px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0px 0px 16px rgba(0,0,0,.25);
+    box-shadow: 0px 0px 16px rgba(0,0,0,.25);
+}
+
+.bSingleColumnArticle {
+    margin: 0px auto 0px auto;
+    padding: 30px;
+}
+
+.eMainTitle {
+    margin: 6px;
+    text-align: center;
+    font-family: Arial, Verdana, Helvetica, sans-serif; 
+    line-height: 27px;
+    font-size: 22px;
+}
+
+.eMainText {
+    margin-top: 9px;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.eMainText p{
+    text-align: center;
+}
+
+.eContentText {
+    padding: 7px;
+}
+
+.eContentText p, .bProductInfo p{
+    text-align: justify;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.eContentText h4{
+    padding: 20px 0;
+    font-family: "BebasNeueRegular";
+    text-shadow: 0 1px 0 #fff;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 35px;
+    color: #CC0920;
+}
+
+.eContentText h3, .bProductInfo h2{
+    padding: 0 0 10px 0;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 35px;
+}
+
+.eContentText h2{
+    background-color: #CC0920;
+    color: #FFF;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+}
+
+.eContentText .resultSuccess{
+    background-color: #9dd81a;
+}
+
+.eContentText ul{
+    margin: 10px 0;
+    padding-left: 15px;
+    list-style: square;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#eFormContact {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    line-height: 8px;
+}
+
+#eFormContact label{
+    line-height: 26px;
+    font-size: 12px;
+}
+
+#eFormContact textarea{
+    width: 97%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 15px;
+}
+
+#eFormContact input[type="text"], #eFormContact input[type="password"]{
+    font-size: 15px;
+    padding: 8px;
+    width: 97%;
+    border: 1px solid #ddd;
+}
+
+#eFormContact div {
+    width: 60%;
+}
+
+.eButtonForm, .eButtonProduct {
+    background-color: #fff;
+    text-indent: 0;
+    border: 1px solid #ddd;
+    display: inline-block;
+    color: #2b2b2b;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    height: 24px;
+    line-height: 24px;
+    width: 80px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.eButtonProduct {
+    background-color: #fff;
+    filter: alpha(opacity=80);
+    height: inherit;
+    min-width: 80px;
+    min-height: 24px;
+    opacity: 0.8;
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+    width: inherit;
+}
+
+.eButtonForm:hover, .eButtonProduct:hover {
+    border:1px solid #a3a3a3;
+    color: #CC0920;
+    text-decoration: none;
+}
+
+.eButtonForm:active, .eButtonProduct:active {
+    position:relative;
+    top:1px;
+}
+
+.bContentProduct {
+    width: 100%;
+    margin: 20px 0 50px 0;
+}
+
+.eProductImage {
+    width: 15%;
+    min-height: 50px;
+    padding: 5px 0 0 7px;
+    vertical-align: top;
+    display: block;
+    display: inline-block;
+}
+
+.eProductImage a img {
+    max-width: 100%;
+}
+
+.bProductInfo {
+    width: 78%;
+    margin: 0 0 0 4%;
+    display: block;
+    display: inline-block;
+}
+
+.bProductInfo h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 0 0 10px 0;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.bProductInfo p {
+    color: #555;
+    font-style: normal;
+    margin-left: 1px;
+    text-align: left;
+}
+
+.eProductPrice{
+    border-top: 1px solid #ccc;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    text-align: right;
+}
+
+.eProductPrice p{
+    display: block;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+    text-align: right;
+}

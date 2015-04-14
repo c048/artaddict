@@ -8,6 +8,13 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+# Leapframe Files
+config.php
+nbproject/*
+public/assets/product/*
+public/assets/font/*
+public/assets/bkgrnd/*
+
 # Windows Installer files
 *.cab
 *.msi

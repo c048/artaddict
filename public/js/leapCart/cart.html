@@ -1,0 +1,109 @@
+<div id="cart_wrapper">
+    <div id="cart_main">
+        <div id="cart_header">
+            <div id="cart_header_shortItems">
+                <img src="http://localhost/artaddict/public/js/leapCart/assets/images/iconCartEmpty.png" alt="iconTotal" /><span class="cart_qty"></span><span class="cart_comment">Click to show cart</span>
+            </div>
+            <div id="cart_header_shortTotal">
+                <img src="http://localhost/artaddict/public/js/leapCart/assets/images/iconTotal.png" alt="iconItems" /><span class="cart_total"></span>
+            </div>
+        </div>
+
+        <div id="cart_panels">
+            <div id="cart_panel_items">
+                <div id="list_items"></div>
+                <div class="cart_actions">
+                    <div class="form_btn" id="btn_list_empty">
+                        <img src="http://localhost/artaddict/public/js/leapCart/assets/images/iconEmpty.png"/>Empty cart
+                    </div>
+                    <div class="form_btn" id="btn_list_hide">
+                        <img src="http://localhost/artaddict/public/js/leapCart/assets/images/iconHide.png"/>Hide cart
+                    </div>
+                    <div class="form_btn" id="btn_list_checkout">
+                        <img src="http://localhost/artaddict/public/js/leapCart/assets/images/iconCheckout.png"/>Checkout
+                    </div>
+                </div>
+            </div>
+
+            <div id="cart_panel_checkout">
+                <form action="artists.php" method="post" id="panel_checkout_form">
+                    <h3>Personal information</h3>
+                    
+                    <fieldset id="form_checkout_fieldset">
+                        <div class="form_column_dual">
+                            <div class="form_checkout_field">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" data-type="string" /> *
+                            </div>
+
+                            <div class="form_checkout_field">
+                                <label for="Surname">Surname</label>
+                                <input type="text" name="surname" id="name" data-type="string" /> *
+                            </div>
+
+                            <div class="form_checkout_field">
+                                <label for="company">Company</label>
+                                <input type="text" name="company" id="name" data-type="string" />
+                            </div>
+                        </div>
+
+                        <div class="form_column_dual">
+                            <div class="form_checkout_field">
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address" data-type="string" /> *
+                            </div>
+
+                            <div class="form_checkout_field">
+                                <label for="zip">ZIP Code</label>
+                                <input type="text" name="zip" id="zip" data-type="string" /> *
+                            </div>
+
+                            <div class="form_checkout_field">
+                                <label for="city">City</label>
+                                <input type="text" name="city" id="city" data-type="string" /> *
+                            </div>
+
+                            <div class="form_checkout_field">
+                                <label for="country">Country</label>
+                                <input type="text" name="country" id="country" data-type="string" /> *
+                            </div>
+                        </div>
+
+                        <div class="form_column_single">
+                            <div class="form_checkout_field">
+                                <label for="email">E-mail</label>
+                                <input type="text" name="email" id="email" data-type="expression" /> *
+                            </div>
+                            <div class="form_checkout_field">
+                                <label for="phone">Phone</label>
+                                <input type="text" name="phone" id="name" data-type="string" /> *
+                            </div>
+                        </div>
+
+                        <div class="form_column_single">
+                            <div class="form_textarea">
+                                <label for="notes">Notes</label>
+                                <textarea name="note" id="notes" data-type="string"></textarea>
+                                <p>* Required field</p>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="cart_actions">
+                        <div class="form_btn" id="btn_checkout_return">
+                            <img src="http://localhost/artaddict/public/js/leapCart/assets/images/iconBack.png"/>Back
+                        </div>
+                        <div class="form_btn" id="btn_checkout_submit">
+                            <img src="http://localhost/artaddict/public/js/leapCart/assets/images/iconSend.png"/>Send
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div id="cart_panel_message">
+                <span class="panel_message_text">Placing order...</span>
+            </div>
+        </div>
+    </div>
+</div>

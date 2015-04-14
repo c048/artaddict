@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="margin: 0; padding: 0; height: 100%;">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Contact Form Enquiry</title>
+        <style type="text/css"></style>
+    </head>
+    <body style="margin: 0; background-color:#eee; padding: 0; width=100%; font-family: Arial; color: #777; font-size: 16px;">
+        <div border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #eee; margin: 0; padding: 0;">
+            <div style="background-color: #fff; width: 600px; margin: 0 auto 0 auto; padding: 0 0 0 0;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr style="height: 135px;">
+                        <td colspan="3" style="width: 100%;" >
+                            <p style="color: #FFF; text-transform:uppercase; margin: 85px 0 0 31px; letter-spacing: 2px; font-size: 1.00em; position: absolute; z-index: 2;"><span style="color: #ff2500;">Contact</span> Form Enquiry</p>
+                            <img style="width: 600px; padding: 0 0 0 0; border: 0px; z-index: 0;" src="email_header.jpg" alt="artaddict logo" id="image_n4"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding: 30px 0 10px 31px;">
+                            <h2 style="font-weight: normal; font-size: 1.05em; color: #ff2500; letter-spacing: 1.2px; margin: 0;">Contact info</h2>
+                            <p style="font-weight: normal; font-size: 0.88em; line-height: 1.35em; margin: 1em 0 1em 0;">
+                                <?php if(!empty($m_sName) echo "Name: $m_sName <br/>" ?>
+                                <?php if(!empty($m_sSurName) echo "Name: $m_sSurName <br/>" ?>
+                                <?php if(!empty($m_sCompany) echo "Name: $m_sCompany <br/>" ?>
+                                <?php if(!empty($m_sEmail) echo "Name: $m_sEmail <br/>" ?>
+                                <?php if(!empty($m_nPhone) echo "Name: $m_nPhone <br/>" ?>
+                                <br/>
+                                <?php if(!empty($m_sAddress) echo "Name: $m_sAddress <br/>" ?>
+                                <?php if(!empty($m_sZip) echo "Name: $m_sZip <br/>" ?>
+                                <?php if(!empty($m_sCity) echo "Name: $m_sCity <br/>" ?>
+                                <?php if(!empty($m_sCountry) echo "Name: $m_sCountry <br/>" ?>
+                            </p>
+                        </td>
+                    </tr>
+                    <?php if(!empty($m_sMessage): ?>
+                    <tr>
+                        <td colspan="3" style="padding: 0 0 0 31px;">
+                            <h2 style="font-weight: normal; font-size: 1.05em; color: #ff2500; letter-spacing: 1.2px; margin: 0;">Message</h2>
+                            <p style="font-weight: normal; font-size: 0.88em; line-height: 1.35em; padding: 0 25px 10px 0; margin: 1em 0 1em 0;">
+                                <?php echo "Name: $m_sMessage <br/>" ?>
+                            </p>
+                        </td>
+                    </tr>
+                    <?php endif; ?>
+                    <tr>
+                        <td colspan="3" style="padding: 0 0 5px 31px;">
+                            <h2 style="font-weight: normal; font-size: 1.05em; color: #ff2500; letter-spacing: 1.2px; margin: 0;">Orders</h2>
+                        </td>
+                    </tr>
+                    <tr style="font-weight: normal; font-size: 0.95em; line-height: 1.35em; letter-spacing: 1.2px; color:#000;">
+                        <td style="width: 300px; padding: 5px 0 5px 31px;">
+                            Product name
+                        </td>
+                        <td style="width: 50px; padding: 5px 10px 10px 15px; text-align:right;">
+                            Price per
+                        </td>
+                        <td style="width: 50px; padding: 5px 30px 10px 0px; text-align:right;">
+                            Total
+                        </td>
+                    </tr>
+                    <tr style="font-weight: normal; font-size: 0.88em; line-height: 1.35em;">
+                        <td style="width: 300px; padding: 5px 0 5px 31px;">
+                            
+                        </td>
+                        <td style="width: 60px; padding: 5px 10px 5px 15px; color: #ff2500; text-align: right;">
+                            Total 
+                        </td>
+                        <td style="width: 50px; padding: 5px 30px 5px 0px; background-color: #ff2500; color: #FFF; text-align:right;">
+                            124000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding: 40px 0 0 0">
+                            <p style="color:#FFF; margin: 65px 0 0 250px; letter-spacing: 2px; font-size: 0.75em; position: absolute; z-index: 2;"><span style="color:#ff2500;">art</span>addict © 2014</p>
+                            <img src="email_footer.jpg" alt="Artaddict footer" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
